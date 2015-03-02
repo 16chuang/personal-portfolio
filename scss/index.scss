@@ -1,0 +1,69 @@
+$welcome-aboard: #A5F2F0;
+$welcome-aboard-dark: #395454;
+
+// GENERAL //
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+section {
+    height: auto;
+    width: 100%;
+}
+
+div {
+    text-align: center;
+    height: auto;
+    
+    &.wrapper {
+        max-width: 80%; height: 100%;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-family: 'myra_4f_capsbold', helvetica, sans-serif;
+    font-size: 5em;
+    margin: 0;
+}
+
+p {
+    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+p.light {
+    font-family: 'myra_4f_capslight', helvetica, sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+// WELCOME ABOARD //
+section#welcome-aboard {
+    background-color: $welcome-aboard;
+    color: $welcome-aboard-dark;
+    
+    div.content {
+        padding: 8% 1%;
+        
+        h1 {
+            margin-bottom: 2%;
+        }
+
+        div#welcome-rocket {
+            margin-top: 4%;
+            position: relative;
+            
+            p {
+                display: none;
+                font-size: 1.2em;
+                position: absolute;
+                top: 20%;
+                right: 15%;
+            }
+        }
+    }
+}

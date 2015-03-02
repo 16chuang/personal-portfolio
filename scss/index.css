@@ -1,0 +1,62 @@
+/* line 5, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+/* line 11, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+section {
+  height: auto;
+  width: 100%; }
+
+/* line 16, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+div {
+  text-align: center;
+  height: auto; }
+  /* line 20, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  div.wrapper {
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+
+/* line 26, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+h1 {
+  font-family: 'myra_4f_capsbold', helvetica, sans-serif;
+  font-size: 5em;
+  margin: 0; }
+
+/* line 32, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+p {
+  font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.5em; }
+
+/* line 38, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+p.light {
+  font-family: 'myra_4f_capslight', helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.5em; }
+
+/* line 45, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+section#welcome-aboard {
+  background-color: #A5F2F0;
+  color: #395454; }
+  /* line 49, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  section#welcome-aboard div.content {
+    padding: 8% 1%; }
+    /* line 52, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div.content h1 {
+      margin-bottom: 2%; }
+    /* line 56, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div.content div#welcome-rocket {
+      margin-top: 4%;
+      position: relative; }
+      /* line 60, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+      section#welcome-aboard div.content div#welcome-rocket p {
+        display: none;
+        font-size: 1.2em;
+        position: absolute;
+        top: 20%;
+        right: 15%; }
+
+/*# sourceMappingURL=index.css.map */
