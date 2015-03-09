@@ -6,7 +6,7 @@ html, body {
 
 /* line 11, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
 section {
-  height: auto;
+  height: 100%;
   width: 100%; }
 
 /* line 16, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
@@ -26,37 +26,40 @@ h1 {
   margin: 0; }
 
 /* line 32, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+h2 {
+  font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+  margin: 0;
+  font-size: 2em; }
+
+/* line 38, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
 p {
   font-family: 'myra_4f_capsregular', helvetica, sans-serif;
   margin: 0;
   font-size: 1.5em; }
 
-/* line 38, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 44, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
 p.light {
   font-family: 'myra_4f_capslight', helvetica, sans-serif;
   margin: 0;
   font-size: 1.5em; }
 
-/* line 45, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 51, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
 section#welcome-aboard {
-  background-color: #A5F2F0;
-  color: #395454; }
-  /* line 49, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  background-color: #A5CCF1;
+  color: #445362; }
+  /* line 55, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  section#welcome-aboard div.wrapper {
+    position: relative; }
+  /* line 59, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
   section#welcome-aboard div.content {
-    padding: 8% 1%; }
-    /* line 52, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+    /* line 66, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
     section#welcome-aboard div.content h1 {
       margin-bottom: 2%; }
-    /* line 56, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
-    section#welcome-aboard div.content div#welcome-rocket {
-      margin-top: 4%;
-      position: relative; }
-      /* line 60, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
-      section#welcome-aboard div.content div#welcome-rocket p {
-        display: none;
-        font-size: 1.2em;
-        position: absolute;
-        top: 20%;
-        right: 15%; }
 
 /*# sourceMappingURL=index.css.map */

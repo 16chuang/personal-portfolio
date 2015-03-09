@@ -8,7 +8,7 @@ var welcome_callout = function () {
 
 var main = function () {
     'use strict';
-    welcome_callout();
+//    welcome_callout();
 };
 
 $(document).ready(main);

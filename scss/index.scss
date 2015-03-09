@@ -1,5 +1,5 @@
-$welcome-aboard: #A5F2F0;
-$welcome-aboard-dark: #395454;
+$welcome-aboard: #A5CCF1;
+$welcome-aboard-dark: #445362;
 
 // GENERAL //
 html, body {
@@ -9,7 +9,7 @@ html, body {
 }
 
 section {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
@@ -29,6 +29,12 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+    margin: 0;
+    font-size: 2em;
+}
+
 p {
     font-family: 'myra_4f_capsregular', helvetica, sans-serif;
     margin: 0;
@@ -46,24 +52,19 @@ section#welcome-aboard {
     background-color: $welcome-aboard;
     color: $welcome-aboard-dark;
     
-    div.content {
-        padding: 8% 1%;
+    div.wrapper {
+        position: relative;
+    }
+    
+    div.content { // center text horizontally and vertically
+        position: absolute;
+        margin: 0;
+        top: 50%; left: 50%; // move top left coordinates to center of container
+        margin-right: -50%; // compensates for left: 50% and keeps div's width at 100%
+        transform: translate(-50%, -50%); // move back half the div's width and height
         
         h1 {
             margin-bottom: 2%;
-        }
-
-        div#welcome-rocket {
-            margin-top: 4%;
-            position: relative;
-            
-            p {
-                display: none;
-                font-size: 1.2em;
-                position: absolute;
-                top: 20%;
-                right: 15%;
-            }
         }
     }
 }
