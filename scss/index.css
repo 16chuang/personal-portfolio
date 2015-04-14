@@ -1,56 +1,98 @@
-/* line 5, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 22, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 html, body {
   height: 100%;
   width: 100%;
   margin: 0; }
 
-/* line 11, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 28, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 section {
   height: 100%;
   width: 100%; }
 
-/* line 16, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 33, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 div {
   text-align: center;
   height: auto; }
-  /* line 20, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  /* line 37, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   div.wrapper {
     max-width: 80%;
     height: 100%;
     margin: 0 auto; }
 
-/* line 26, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 43, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h1 {
-  font-family: 'myra_4f_capsbold', helvetica, sans-serif;
-  font-size: 5em;
+  font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+  font-size: 6em;
   margin: 0; }
 
-/* line 32, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 49, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h2 {
-  font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+  font-family: 'myra_4f_capsbold', helvetica, sans-serif;
+  font-size: 3em;
+  margin: 0; }
+
+/* line 55, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+h3 {
+  font-family: 'lato', helvetica, sans-serif;
+  font-weight: 400;
   margin: 0;
   font-size: 2em; }
 
-/* line 38, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 62, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 p {
-  font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+  font-family: 'lato', helvetica, sans-serif;
   margin: 0;
   font-size: 1.5em; }
 
-/* line 44, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
-p.light {
-  font-family: 'myra_4f_capslight', helvetica, sans-serif;
-  margin: 0;
-  font-size: 1.5em; }
-
-/* line 51, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+/* line 69, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 section#welcome-aboard {
-  background-color: #A5CCF1;
-  color: #445362; }
-  /* line 55, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  background-color: #F1F9F9;
+  color: #535D66;
+  position: relative; }
+  /* line 74, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  section#welcome-aboard div#name {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center; }
+    /* line 81, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div#name p {
+      font-weight: 300;
+      font-size: 1.7em; }
+      /* line 84, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#welcome-aboard div#name p #first-name {
+        color: #28E2BB; }
+      /* line 85, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#welcome-aboard div#name p #last-name {
+        color: #00DEE6; }
+    /* line 88, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div#name ul {
+      overflow: auto;
+      margin: 0;
+      margin-top: 1%;
+      padding: 0; }
+      /* line 94, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#welcome-aboard div#name ul li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 2%; }
+        /* line 101, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        section#welcome-aboard div#name ul li a:hover i {
+          opacity: 1; }
+        /* line 104, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        section#welcome-aboard div#name ul li a i {
+          transition: all 0.15s ease-in-out;
+          color: #535D66;
+          opacity: .7;
+          margin-top: 1%;
+          text-align: center;
+          font-size: 1.5em; }
+  /* line 117, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#welcome-aboard div.wrapper {
     position: relative; }
-  /* line 59, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
+  /* line 121, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#welcome-aboard div.content {
     position: absolute;
     margin: 0;
@@ -58,8 +100,33 @@ section#welcome-aboard {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
-    /* line 66, /Users/clairehuang/Desktop/Claire's Homework/Castilleja/Applications/personal portfolio/site/scss/index.scss */
-    section#welcome-aboard div.content h1 {
-      margin-bottom: 2%; }
+    /* line 128, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div.content div#text {
+      width: auto;
+      text-align: left;
+      padding-left: 30%; }
+      /* line 133, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#welcome-aboard div.content div#text h1 {
+        margin-bottom: 2%; }
+    /* line 138, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#welcome-aboard div.content img {
+      float: left;
+      width: 25%; }
+
+/* line 146, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+section#about-me {
+  background-color: #150F4B;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0F082B), to(#150F4B));
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-linear-gradient(top, #0F082B, #150F4B);
+  /* Safari 5.1, Chrome 10+ */
+  background: -moz-linear-gradient(top, #0F082B, #150F4B);
+  /* Firefox 3.6+ */
+  background: -ms-linear-gradient(top, #0F082B, #150F4B);
+  /* IE 10 */
+  background: -o-linear-gradient(top, #0F082B, #150F4B);
+  /* Opera 11.10+ */
+  background-repeat: repeat-x;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */

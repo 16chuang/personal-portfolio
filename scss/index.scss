@@ -1,7 +1,24 @@
-$welcome-aboard: #A5CCF1;
-$welcome-aboard-dark: #445362;
+// =========== COLORS =========== //
+$welcome-aboard-bkgd: #F1F9F9 ;
+$welcome-aboard-darkgray: #535D66;
+$mint: #28E2BB;
+$light-blue: #00DEE6;
+$about-me-top: #0F082B;
+$about-me-bottom: #150F4B;
 
-// GENERAL //
+// =========== GRADIENTS =========== //
+@mixin gradient($from, $to) {
+    background-color: $to; // fallback
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(top, $from, $to); /* Safari 5.1, Chrome 10+ */
+    background: -moz-linear-gradient(top, $from, $to); /* Firefox 3.6+ */
+    background: -ms-linear-gradient(top, $from, $to); /* IE 10 */
+    background: -o-linear-gradient(top, $from, $to); /* Opera 11.10+ */
+    
+    background-repeat: repeat-x;
+}
+
+// =========== GENERAL =========== //
 html, body {
     height: 100%;
     width: 100%;
@@ -24,33 +41,78 @@ div {
 }
 
 h1 {
-    font-family: 'myra_4f_capsbold', helvetica, sans-serif;
-    font-size: 5em;
+    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+    font-size: 6em;
     margin: 0;
 }
 
 h2 {
-    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+    font-family: 'myra_4f_capsbold', helvetica, sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'lato', helvetica, sans-serif;
+    font-weight: 400;
     margin: 0;
     font-size: 2em;
 }
 
 p {
-    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
+    font-family: 'lato', helvetica, sans-serif;
     margin: 0;
     font-size: 1.5em;
 }
 
-p.light {
-    font-family: 'myra_4f_capslight', helvetica, sans-serif;
-    margin: 0;
-    font-size: 1.5em;
-}
-
-// WELCOME ABOARD //
+// =========== WELCOME ABORD =========== //
 section#welcome-aboard {
-    background-color: $welcome-aboard;
-    color: $welcome-aboard-dark;
+    background-color: $welcome-aboard-bkgd;
+    color: $welcome-aboard-darkgray;
+    position: relative;
+    
+    div#name {
+        z-index: 100;
+        position: absolute;
+        top: 2%; left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        
+        p {
+            font-weight: 300;
+            font-size: 1.7em;
+            #first-name { color: $mint; }
+            #last-name { color: $light-blue; }
+        }
+        
+        ul {
+            overflow: auto;
+            margin: 0;
+            margin-top: 1%;
+            padding: 0; 
+            
+            li {
+                list-style-type: none;
+                display: inline;
+                margin: 0 2%;
+                
+                a {
+                    &:hover {
+                        i { opacity: 1; }
+                    }
+                    
+                    i {
+                        transition: all 0.15s ease-in-out;
+                        color: $welcome-aboard-darkgray;
+                        opacity: .7;
+                        margin-top: 1%;
+                        text-align: center;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
     
     div.wrapper {
         position: relative;
@@ -63,8 +125,25 @@ section#welcome-aboard {
         margin-right: -50%; // compensates for left: 50% and keeps div's width at 100%
         transform: translate(-50%, -50%); // move back half the div's width and height
         
-        h1 {
-            margin-bottom: 2%;
+        div#text {
+            width: auto;
+            text-align: left;
+            padding-left: 30%;
+            
+            h1 {
+                margin-bottom: 2%;
+            }
+        }
+        
+        img {
+            float: left;
+            width: 25%
         }
     }
+}
+
+// =========== ABOUT ME =========== //
+section#about-me {
+    @include gradient($about-me-top, $about-me-bottom);
+    color: white;
 }
