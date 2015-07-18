@@ -1,10 +1,10 @@
 // =========== COLORS =========== //
-$welcome-aboard-bkgd: #F1F9F9 ;
-$welcome-aboard-darkgray: #535D66;
+$title-bkgd: #F1F9F9;
+$title-darkgray: #535D66;
+$contact-icons-gray: #C5CDCD;
 $mint: #28E2BB;
+$mid-gradient: #28E2BB;
 $light-blue: #00DEE6;
-$about-me-top: #0F082B;
-$about-me-bottom: #150F4B;
 
 // =========== GRADIENTS =========== //
 @mixin gradient($from, $to) {
@@ -41,14 +41,17 @@ div {
 }
 
 h1 {
-    font-family: 'myra_4f_capsregular', helvetica, sans-serif;
-    font-size: 6em;
+    font-family: 'montserrat', helvetica, sans-serif;
+    line-height: 1.1em;
+    font-size: 5.7em;
+    font-weight: 300;
     margin: 0;
 }
 
 h2 {
-    font-family: 'myra_4f_capsbold', helvetica, sans-serif;
+    font-family: 'montserrat', helvetica, sans-serif;
     font-size: 3em;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -56,7 +59,7 @@ h3 {
     font-family: 'lato', helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 p {
@@ -65,25 +68,39 @@ p {
     font-size: 1.5em;
 }
 
-// =========== WELCOME ABORD =========== //
-section#welcome-aboard {
-    background-color: $welcome-aboard-bkgd;
-    color: $welcome-aboard-darkgray;
-    position: relative;
+span.green-text { color: $mint; }
+span.blue-text { color: $light-blue; }
+
+// ===================================== //
+// =============== TITLE =============== //
+// ===================================== //
+section#title {
+    background-color: $title-bkgd;
+    color: $title-darkgray;
     
-    div#name {
-        z-index: 100;
-        position: absolute;
-        top: 2%; left: 50%;
-        transform: translate(-50%, 0%);
-        text-align: center;
+    div#title {
+        display: inline-block;
+        margin-bottom: 5%;
         
-        p {
-            font-weight: 300;
-            font-size: 1.7em;
-            #first-name { color: $mint; }
-            #last-name { color: $light-blue; }
+        h1 { position: relative; margin-bottom: -9%; z-index: 1; }
+        img { 
+            display: block;
+            width: 118%; 
+            margin-left: auto; margin-right: auto;
+            position: relative;
+            right: 9%;
+            z-index: 0; 
         }
+    }
+    
+    div#subtitle {
+        margin: 2% 0 5% 0;
+        i { margin: 0 10px; }
+    }
+    
+    div#contact-icons {
+        margin: 5% 0;
+        text-align: center;
         
         ul {
             overflow: auto;
@@ -97,17 +114,14 @@ section#welcome-aboard {
                 margin: 0 2%;
                 
                 a {
-                    &:hover {
-                        i { opacity: 1; }
-                    }
+                    text-decoration: none;
+                    color: $contact-icons-gray;
+                    font-size: 1.5em;
                     
-                    i {
-                        transition: all 0.15s ease-in-out;
-                        color: $welcome-aboard-darkgray;
-                        opacity: .7;
-                        margin-top: 1%;
-                        text-align: center;
-                        font-size: 1.5em;
+                    &:hover {
+                        &#linkedin { color: $mint; }
+                        &#github { color: $mid-gradient; }
+                        &#email { color: $light-blue; }
                     }
                 }
             }
@@ -119,31 +133,20 @@ section#welcome-aboard {
     }
     
     div.content { // center text horizontally and vertically
+        display: inline-block;
         position: absolute;
         margin: 0;
         top: 50%; left: 50%; // move top left coordinates to center of container
         margin-right: -50%; // compensates for left: 50% and keeps div's width at 100%
         transform: translate(-50%, -50%); // move back half the div's width and height
-        
-        div#text {
-            width: auto;
-            text-align: left;
-            padding-left: 30%;
-            
-            h1 {
-                margin-bottom: 2%;
-            }
-        }
-        
-        img {
-            float: left;
-            width: 25%
-        }
     }
 }
 
+// ================================ //
 // =========== ABOUT ME =========== //
+// ================================ //
 section#about-me {
-    @include gradient($about-me-top, $about-me-bottom);
+    background-color: $title-darkgray;
     color: white;
+    text-align: center;
 }
