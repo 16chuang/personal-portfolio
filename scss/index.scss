@@ -5,6 +5,7 @@ $contact-icons-gray: #C5CDCD;
 $mint: #28E2BB;
 $mid-gradient: #28E2BB;
 $light-blue: #00DEE6;
+$about-me-bkgd: #37474F;
 
 // =========== GRADIENTS =========== //
 @mixin gradient($from, $to) {
@@ -37,25 +38,42 @@ div {
     &.wrapper {
         max-width: 80%; height: 100%;
         margin: 0 auto;
+        position: relative;
+    }
+    
+    &.content { // center text horizontally and vertically
+        display: inline-block;
+        position: absolute;
+        margin: 0;
+        top: 50%; left: 50%; // move top left coordinates to center of container
+        margin-right: -50%; // compensates for left: 50% and keeps div's width at 100%
+        transform: translate(-50%, -50%); // move back half the div's width and height
     }
 }
 
 h1 {
     font-family: 'montserrat', helvetica, sans-serif;
     line-height: 1.1em;
-    font-size: 5.7em;
+    font-size: 5.9em;
     font-weight: 300;
     margin: 0;
 }
 
 h2 {
     font-family: 'montserrat', helvetica, sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 500;
     margin: 0;
 }
 
 h3 {
+    font-family: 'lato', helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 2em;
+}
+
+h4 {
     font-family: 'lato', helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
@@ -82,7 +100,7 @@ section#title {
         display: inline-block;
         margin-bottom: 5%;
         
-        h1 { position: relative; margin-bottom: -9%; z-index: 1; }
+        h1 { position: relative; margin-bottom: -6%; z-index: 1; }
         img { 
             display: block;
             width: 118%; 
@@ -127,26 +145,47 @@ section#title {
             }
         }
     }
-    
-    div.wrapper {
-        position: relative;
-    }
-    
-    div.content { // center text horizontally and vertically
-        display: inline-block;
-        position: absolute;
-        margin: 0;
-        top: 50%; left: 50%; // move top left coordinates to center of container
-        margin-right: -50%; // compensates for left: 50% and keeps div's width at 100%
-        transform: translate(-50%, -50%); // move back half the div's width and height
-    }
 }
 
 // ================================ //
 // =========== ABOUT ME =========== //
 // ================================ //
 section#about-me {
-    background-color: $title-darkgray;
+    background-color: $about-me-bkgd;
     color: white;
     text-align: center;
+    
+    h2 { margin-bottom: 5%; }
+    h4 { margin-bottom: 8%; }
+    
+    div#topics-container {
+        width: 120%;
+        margin-left: -10%; margin-right: -10%;
+        display: flex;
+        flex-flow: nowrap;
+        background-color: coral;
+        height: 370px;
+        
+        div.expandable-panel {
+            background-color: cornflowerblue;
+            outline: white 1px solid;
+            flex-grow: 1;
+            
+            transition: flex-grow 0.5s,
+                        background-color 0.2s;
+            
+            &:hover { background-color: darken(cornflowerblue, 10%); }
+        }
+    }
+}
+
+// ================================ //
+// =========== PROJECTS =========== //
+// ================================ //
+section#projects {
+    div#projects-container {
+        .mix {
+            display: none;
+        }
+    }
 }

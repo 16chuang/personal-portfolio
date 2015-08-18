@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Claire Huang</title>
-        
-        <!-- FONTS -->
-        <link rel="stylesheet" href="webfonts/portfolio-icons/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        
-        <!-- STYLING -->
-        <link rel="stylesheet" href="scss/index.css">
-        
-        <!-- SCRIPTS -->
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/index.js"></script>
-    </head>
-    
-    <body>
-        <section id="title">
-            <div class="wrapper">
-                <div class="content">
-                    <div id="title">
-                        <h1><span class="green-text">claire</span> <span class="blue-text">huang</span></h1>
-                        <img src="img/rocket-path.svg" alt="rocket!">
-                    </div>
-                    <div id="subtitle">
-                        <h3>high school senior <i class="icon-saturn"></i> aspiring engineer</h3>
-                    </div>
-                    <div id="contact-icons">
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/16chuang" id="linkedin"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="https://github.com/16chuang" id="github"><i class="icon-github"></i></a></li>
-                            <li><a href="mailto:16chuang@gmail.com?Subject=Howdy!" id="email"><i class="icon-email"></i></a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <title>Claire Huang</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="webfonts/portfolio-icons/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- STYLING -->
+    <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+    <section id="title">
+    <div class="wrapper">
+        <div class="content">
+            <div id="title">
+                <h1><span class="green-text">claire</span> <span class="blue-text">huang</span></h1>
+                <img src="img/rocket-path.svg" alt="rocket!">
+            </div>
+            <div id="subtitle">
+                <h4>high school senior <i class="icon-saturn"></i> aspiring engineer</h4>
+            </div>
+            <div id="contact-icons">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/16chuang" id="linkedin"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="https://github.com/16chuang" id="github"><i class="icon-github"></i></a></li>
+                    <li><a href="mailto:16chuang@gmail.com?Subject=Howdy!" id="email"><i class="icon-email"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about-me">
+    <div class="wrapper">
+       <div class="content">
+            <div id="top-text">
+                <h2>a bit about me</h2>
+                <h4>I'm a high school senior from Palo Alto who is excited about:</h4>
+            </div>
+            <div id="topics-container">
+                <div class="expandable-panel" id="1-robotics">
+                    1
+                </div>
+                <div class="expandable-panel" id="2-cs">
+                    2
+                </div>
+                <div class="expandable-panel" id="3-design">
+                    3
                 </div>
             </div>
-        </section>
-        
-<!--
-        <section id="about-me">
-            <h2>a bit about me</h2>
-            <h3>I'm a high school senior from Palo Alto, CA<br/>who is excited about:</h3>
-        </section>
--->
-    </body>
+       </div>
+    </div>
+    </section>
+    
+    <section id="projects">
+    <div class="wrapper">
+        <div class="content">
+            <div id="projects-intro">
+
+            </div>
+            <div id="projects-filter">
+                <div class="filter" data-filter="all">all</div>
+                <div class="filter" data-filter=".robotics">robotics</div>
+                <div class="filter" data-filter=".mobile-apps">mobile apps</div>
+                <div class="filter" data-filter=".web-design">web design</div>
+            </div>
+            <div id="projects-container">
+                <div class="mix robotics">FRC 2015</div>
+                <div class="mix mobile-apps web-design">Mezzo</div>
+                <div class="mix">neural network</div>
+                <div class="mix robotics">Bluestamp</div>
+                <div class="mix web-design">GoVoluntr</div>
+                <div class="mix mobile-apps">Trext</div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    <!-- SCRIPTS -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!-- MIT IT UP LIBRARY -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    
+    <script src="js/index.js"></script>
+</body>
     
 </html>
