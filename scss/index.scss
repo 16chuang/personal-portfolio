@@ -3,9 +3,13 @@ $title-bkgd: #F1F9F9;
 $title-darkgray: #535D66;
 $contact-icons-gray: #C5CDCD;
 $mint: #28E2BB;
-$mid-gradient: #28E2BB;
+$mid-gradient: #1FDCCD;
 $light-blue: #00DEE6;
-$about-me-bkgd: #37474F;
+
+$darkgray-bkgd: #464F5A;
+$about-me-green-text: #2BDFBF;
+$about-me-teal-text: #1CD3E7;
+$about-me-blue-text: #6AC0FA;
 
 // =========== GRADIENTS =========== //
 @mixin gradient($from, $to) {
@@ -24,6 +28,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: 'lato', helvetica, sans-serif;
 }
 
 section {
@@ -98,7 +103,7 @@ section#title {
     
     div#title {
         display: inline-block;
-        margin-bottom: 5%;
+        margin-bottom: 6%;
         
         h1 { position: relative; margin-bottom: -6%; z-index: 1; }
         img { 
@@ -151,8 +156,8 @@ section#title {
 // =========== ABOUT ME =========== //
 // ================================ //
 section#about-me {
-    background-color: $about-me-bkgd;
-    color: white;
+    background-color: $darkgray-bkgd;
+    color: $title-bkgd;
     text-align: center;
     
     h2 { margin-bottom: 5%; }
@@ -163,18 +168,46 @@ section#about-me {
         margin-left: -10%; margin-right: -10%;
         display: flex;
         flex-flow: nowrap;
-        background-color: coral;
         height: 370px;
         
-        div.expandable-panel {
-            background-color: cornflowerblue;
-            outline: white 1px solid;
+        div.panel {
+            font-family: 'montserrat', helvetica, sans-serif;
+            padding: 3% 0;
+            font-size: 2em;
+            width: 0;
+//            text-transform: uppercase;
             flex-grow: 1;
+            cursor: pointer;
             
-            transition: flex-grow 0.5s,
-                        background-color 0.2s;
+            transition: color .2s;
             
-            &:hover { background-color: darken(cornflowerblue, 10%); }
+            img { 
+                padding-bottom: 10%; 
+                transition: width .2s;
+            }
+            
+            &:hover {
+                img { width: 70%; }
+            }
+            
+            &:nth-child(1) { 
+                color: $about-me-green-text;
+                &:hover { 
+                    color: darken($about-me-green-text, 10%);  
+                }
+            }
+            &:nth-child(2) { 
+                color: $about-me-teal-text;
+                &:hover { 
+                    color: darken($about-me-teal-text, 10%);
+                }
+            }
+            &:nth-child(3) { 
+                color: $about-me-blue-text;
+                &:hover { 
+                    color: darken($about-me-blue-text, 10%);
+                }
+            }
         }
     }
 }
@@ -182,10 +215,48 @@ section#about-me {
 // ================================ //
 // =========== PROJECTS =========== //
 // ================================ //
-section#projects {
+section#projects {    
+    div#projects-intro {
+        margin: 5% 0 3% 0;
+    }
+    
+    div#projects-filter {
+        button {
+            display: inline-block;
+            border-radius: 4px;
+            background: lightgray;
+            border: 0;
+            padding: 5px 10px;
+            cursor: pointer;
+            
+            font-family: 'lato', helvetica, sans-serif;
+            font-size: 1em;
+            
+            &:hover {
+                background: darken(lightgray, 20%);
+            }
+        }
+        
+        margin-bottom: 2%;
+    }
+    
     div#projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10%;
+        
         .mix {
             display: none;
+            flex-grow: 1;
+            width: 25%;
+            background-color: cornflowerblue;
+            margin: 1%;
+            height: 230px;
         }
+        
+        .robotics { }
+        .mobile-apps { }
+        .web-design { }
     }
 }

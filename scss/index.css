@@ -1,25 +1,26 @@
-/* line 23, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 27, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  font-family: 'lato', helvetica, sans-serif; }
 
-/* line 29, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 34, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 section {
   height: 100%;
   width: 100%; }
 
-/* line 34, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 39, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 div {
   text-align: center;
   height: auto; }
-  /* line 38, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 43, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   div.wrapper {
     max-width: 80%;
     height: 100%;
     margin: 0 auto;
     position: relative; }
-  /* line 44, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 49, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   div.content {
     display: inline-block;
     position: absolute;
@@ -29,7 +30,7 @@ div {
     margin-right: -50%;
     transform: translate(-50%, -50%); }
 
-/* line 54, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 59, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h1 {
   font-family: 'montserrat', helvetica, sans-serif;
   line-height: 1.1em;
@@ -37,55 +38,55 @@ h1 {
   font-weight: 300;
   margin: 0; }
 
-/* line 62, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 67, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h2 {
   font-family: 'montserrat', helvetica, sans-serif;
   font-size: 4em;
   font-weight: 500;
   margin: 0; }
 
-/* line 69, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 74, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h3 {
   font-family: 'lato', helvetica, sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 2em; }
 
-/* line 76, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 81, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 h4 {
   font-family: 'lato', helvetica, sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 1.7em; }
 
-/* line 83, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 88, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 p {
   font-family: 'lato', helvetica, sans-serif;
   margin: 0;
   font-size: 1.5em; }
 
-/* line 89, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 94, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 span.green-text {
   color: #28E2BB; }
 
-/* line 90, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 95, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 span.blue-text {
   color: #00DEE6; }
 
-/* line 95, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 100, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 section#title {
   background-color: #F1F9F9;
   color: #535D66; }
-  /* line 99, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 104, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#title div#title {
     display: inline-block;
-    margin-bottom: 5%; }
-    /* line 103, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    margin-bottom: 6%; }
+    /* line 108, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#title div#title h1 {
       position: relative;
       margin-bottom: -6%;
       z-index: 1; }
-    /* line 104, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    /* line 109, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#title div#title img {
       display: block;
       width: 118%;
@@ -94,74 +95,130 @@ section#title {
       position: relative;
       right: 9%;
       z-index: 0; }
-  /* line 114, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 119, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#title div#subtitle {
     margin: 2% 0 5% 0; }
-    /* line 116, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    /* line 121, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#title div#subtitle i {
       margin: 0 10px; }
-  /* line 119, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 124, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#title div#contact-icons {
     margin: 5% 0;
     text-align: center; }
-    /* line 123, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    /* line 128, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#title div#contact-icons ul {
       overflow: auto;
       margin: 0;
       margin-top: 1%;
       padding: 0; }
-      /* line 129, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      /* line 134, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
       section#title div#contact-icons ul li {
         list-style-type: none;
         display: inline;
         margin: 0 2%; }
-        /* line 134, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        /* line 139, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
         section#title div#contact-icons ul li a {
           text-decoration: none;
           color: #C5CDCD;
           font-size: 1.5em; }
-          /* line 140, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+          /* line 145, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
           section#title div#contact-icons ul li a:hover#linkedin {
             color: #28E2BB; }
-          /* line 141, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+          /* line 146, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
           section#title div#contact-icons ul li a:hover#github {
-            color: #28E2BB; }
-          /* line 142, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+            color: #1FDCCD; }
+          /* line 147, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
           section#title div#contact-icons ul li a:hover#email {
             color: #00DEE6; }
 
-/* line 153, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+/* line 158, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
 section#about-me {
-  background-color: #37474F;
-  color: white;
+  background-color: #464F5A;
+  color: #F1F9F9;
   text-align: center; }
-  /* line 158, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 163, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#about-me h2 {
     margin-bottom: 5%; }
-  /* line 159, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 164, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#about-me h4 {
     margin-bottom: 8%; }
-  /* line 161, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  /* line 166, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
   section#about-me div#topics-container {
     width: 120%;
     margin-left: -10%;
     margin-right: -10%;
     display: flex;
     flex-flow: nowrap;
-    background-color: coral;
     height: 370px; }
-    /* line 169, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
-    section#about-me div#topics-container div.expandable-panel {
-      background-color: cornflowerblue;
-      outline: white 1px solid;
+    /* line 173, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#about-me div#topics-container div.panel {
+      font-family: 'montserrat', helvetica, sans-serif;
+      padding: 3% 0;
+      font-size: 2em;
+      width: 0;
       flex-grow: 1;
-      transition: flex-grow 0.5s, background-color 0.2s; }
-      /* line 177, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
-      section#about-me div#topics-container div.expandable-panel:hover {
-        background-color: #3676e8; }
+      cursor: pointer;
+      transition: color 0.2s; }
+      /* line 184, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#about-me div#topics-container div.panel img {
+        padding-bottom: 10%;
+        transition: width 0.2s; }
+      /* line 190, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#about-me div#topics-container div.panel:hover img {
+        width: 70%; }
+      /* line 193, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#about-me div#topics-container div.panel:nth-child(1) {
+        color: #2BDFBF; }
+        /* line 195, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        section#about-me div#topics-container div.panel:nth-child(1):hover {
+          color: #1cbb9f; }
+      /* line 199, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#about-me div#topics-container div.panel:nth-child(2) {
+        color: #1CD3E7; }
+        /* line 201, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        section#about-me div#topics-container div.panel:nth-child(2):hover {
+          color: #14acbc; }
+      /* line 205, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      section#about-me div#topics-container div.panel:nth-child(3) {
+        color: #6AC0FA; }
+        /* line 207, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+        section#about-me div#topics-container div.panel:nth-child(3):hover {
+          color: #39abf8; }
 
-/* line 187, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
-section#projects div#projects-container .mix {
-  display: none; }
+/* line 219, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+section#projects div#projects-intro {
+  margin: 5% 0 3% 0; }
+
+/* line 223, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+section#projects div#projects-filter {
+  margin-bottom: 2%; }
+  /* line 224, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  section#projects div#projects-filter button {
+    display: inline-block;
+    border-radius: 4px;
+    background: lightgray;
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'lato', helvetica, sans-serif;
+    font-size: 1em; }
+    /* line 235, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#projects div#projects-filter button:hover {
+      background: #a0a0a0; }
+
+/* line 243, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+section#projects div#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10%; }
+  /* line 249, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+  section#projects div#projects-container .mix {
+    display: none;
+    flex-grow: 1;
+    width: 25%;
+    background-color: cornflowerblue;
+    margin: 1%;
+    height: 230px; }
 
 /*# sourceMappingURL=index.css.map */
