@@ -1,27 +1,33 @@
-// /*jslint browser: true*/
-// /*global $, jQuery, alert*/
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
 
 var main = function () {
     'use strict';
-
-//    // expand expandable panel div if clicked
-//    $('.expandable-panel').on('click', function() {
-//        var $panel = $(this);
-//        $panel.css('flex-grow', '5');
-//
-//        var $siblings = $panel.siblings()
-//        $siblings.css('flex-grow', '1');
-//    });
-//    
-//    // reset flex box if click outside of the panels
-//    $(document).on('click', function(event) {
-//        if(!$(event.target).closest('.expandable-panel').length) {
-//            $('.expandable-panel').css('flex-grow', '1');
-//        }
-//    });
      
     // instantiate Mix It Up
     $('#projects-container').mixItUp();
+    
+    $('div.mix').each(function(n) {
+        addBackgroundOverlay($(this), true);
+    });
+    
+    $("div.mix").hover(function() {
+        var div = $(this);
+        div.children().css("display", "none");
+        addBackgroundOverlay(div, false);
+    }, function() {
+        var div = $(this);
+        div.children().css("display", "");
+        addBackgroundOverlay(div, true);
+    });
 };
+
+// adds or removes semi-transparent overlay on given div
+function addBackgroundOverlay(div, hide) {
+    var id = div.attr('id');
+    var bkgdStr = "url(img/projects/pics/"+id+".png)";
+    if (hide) { bkgdStr = "linear-gradient(rgba(50, 50, 50, 0.6), rgba(50, 50, 50, 0.7))," + bkgdStr; }
+    div.css("background", bkgdStr);
+}
 
 $(document).ready(main);

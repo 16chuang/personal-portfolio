@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="42px" viewBox="0 0 50 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>quakes icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="web" sketch:type="MSArtboardGroup" transform="translate(-754.000000, -1605.000000)" stroke="#FFFFFF" stroke-width="3">
+            <g id="quakes" sketch:type="MSLayerGroup" transform="translate(646.000000, 1567.000000)">
+                <path d="M108,63.4963331 C108,63.4963331 108.890438,63.4963331 110.00525,63.4963331 L113.626872,63.4963331 C114.734342,63.4963331 116.02679,62.6928075 116.515439,61.6979371 L119.887171,54.8332287 C120.375013,53.840002 120.928957,53.9136185 121.126261,55.0077519 L125.096983,77.0270807 C125.293471,78.116694 125.57185,78.1084602 125.717729,77.0163938 L130.531033,40.9836062 C130.677374,39.8880908 130.941999,39.8864336 131.121972,40.979185 L135.438071,67.1854361 C135.618097,68.2785098 136.129181,68.3426431 136.575874,67.3370859 L139.706182,60.2904145 C140.154548,59.2810946 140.798748,59.3197623 141.139948,60.3612221 L144.72903,71.3163588 C145.072512,72.3647846 145.77995,72.4194069 146.300281,71.4547786 L149.643836,65.2562571 C150.168133,64.2842784 151.48944,63.496334 152.599107,63.496334 L157.427276,63.496334" id="quakes-icon" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

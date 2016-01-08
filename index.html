@@ -14,92 +14,116 @@
 </head>
 
 <body>
-    <section id="title">
-    <div class="wrapper">
-        <div class="content">
-            <div id="title">
-                <h1><span class="green-text">claire</span> <span class="blue-text">huang</span></h1>
-                <img src="img/rocket-path.svg" alt="rocket!">
-            </div>
-            <div id="subtitle">
-                <h4>high school senior <i class="icon-saturn"></i> aspiring engineer</h4>
-            </div>
-            <div id="contact-icons">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/16chuang" id="linkedin"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="https://github.com/16chuang" id="github"><i class="icon-github"></i></a></li>
-                    <li><a href="mailto:16chuang@gmail.com?Subject=Howdy!" id="email"><i class="icon-email"></i></a></li>
-                </ul>
-            </div>
-        </div>
+<section id="title">
+<div class="wrapper">
+<div class="content">
+    <div id="title">
+        <h1><span class="green-text">claire</span> <span class="blue-text">huang</span></h1>
+<!--                <img src="img/rocket-path.svg" alt="rocket!">-->
     </div>
-    </section>
+    <div id="subtitle">
+        <h4>high school senior <i class="icon-saturn"></i> aspiring engineer</h4>
+    </div>
+    <div id="contact-icons">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/16chuang" id="linkedin"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/16chuang" id="github"><i class="icon-github"></i></a></li>
+            <li><a href="mailto:16chuang@gmail.com?Subject=Howdy!" id="email"><i class="icon-email"></i></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</section>
 
-    <section id="about-me">
-    <div class="wrapper">
-       <div class="content">
-            <div id="top-text">
-                <h2>a bit about me</h2>
-                <h4>I'm a high school senior from Palo Alto who is excited about:</h4>
-            </div>
-            <div id="topics-container">
-                <div class="panel">
-                    <img src="img/about-me-cs.png" alt="terminal" width=66%>
-                    Computer<br>Science
-                </div>
-                <div class="panel">
-                    <img src="img/about-me-eng.png" alt="robot" width=66%>
-                    Engineering<br>&amp; Robotics
-                </div>
-                <div class="panel">
-                    <img src="img/about-me-design.png" alt="design" width=66%>
-                    Product<br>Design
-                </div>
-            </div>
-       </div>
+<section id="about-me">
+<div class="wrapper">
+<div class="content">
+    <div id="top-text">
+        <h2>a bit about me</h2>
+        <h4>I'm a high school senior from Palo Alto who is excited about:</h4>
     </div>
-    </section>
-    
-<!--    <section id="projects">-->
-<!--
-    <div class="wrapper">
-        <div class="content">
--->
-<!--
-            <div id="projects-intro">
-                <h2>projects</h2>
-            </div>
-            <div id="projects-filter">
-                <button class="filter" data-filter="all">all</button>
-                <button class="filter" data-filter=".robotics">robotics</button>
-                <button class="filter" data-filter=".mobile-apps">mobile apps</button>
-                <button class="filter" data-filter=".web-design">web design</button>
-            </div>
-            <div id="projects-container">
-                <div class="mix robotics">FRC 2015</div>
-                <div class="mix mobile-apps web-design">Mezzo</div>
-                <div class="mix">neural network</div>
-                <div class="mix robotics">Bluestamp</div>
-                <div class="mix web-design">GoVoluntr</div>
-                <div class="mix mobile-apps">Trext</div>
-            </div>
--->
-<!--
+    <div id="topics-container">
+        <div class="panel">
+            <img src="img/about-me-cs.png" alt="terminal" width=66%>
+            Computer<br>Science
+        </div>
+        <div class="panel">
+            <img src="img/about-me-eng.png" alt="robot" width=66%>
+            Engineering<br>&amp; Robotics
+        </div>
+        <div class="panel">
+            <img src="img/about-me-design.png" alt="design" width=66%>
+            Product<br>Design
         </div>
     </div>
--->
-<!--    </section>-->
-    
-    
-    <!-- SCRIPTS -->
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    
-    <!-- MIT IT UP LIBRARY -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    
-    <script src="js/index.js"></script>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="wrapper">
+<div class="content">
+    <div id="projects-intro">
+        <h2>my projects</h2>
+    </div>
+    <div id="projects-filter">
+        <button class="filter" data-filter="all">all</button>
+        <button class="filter" data-filter=".robotics">robotics</button>
+        <button class="filter" data-filter=".mobile-apps">mobile apps</button>
+        <button class="filter" data-filter=".web">websites</button>
+    </div>
+    <div id="projects-container">
+        <div class="mix robotics" id="bluestamp">
+            <img src="img/projects/icons/bluestamp.svg">
+            <h5>Balancing Robot</h5> 
+            <h6>think segway, but fit for a travel-sized teddy bear</h6>
+        </div>
+        <div class="mix mobile-apps" id="mezzo">
+            <img src="img/projects/icons/mezzo.svg"> 
+            <h5>Mezzo</h5> 
+            <h6>reducing food waste, one donation at a time</h6>
+        </div>
+        <div class="mix web" id="quakes">
+            <img src="img/projects/icons/quakes.svg">
+            <h5>Quake Visualizer</h5> 
+            <h6>2015's biggest quakes  on a map – who's next?</h6>
+        </div>
+        <div class="mix web" id="govo">
+            <img src="img/projects/icons/govo.svg"> 
+            <h5>GoVoluntr Guide</h5> 
+            <h6>interactive user guide for GoVoluntr</h6>
+        </div>
+        <div class="mix mobile-apps" id="trext">
+            <img src="img/projects/icons/trext.svg"> 
+            <h5>Trext</h5> 
+            <h6>never send another "arrived safely!" text</h6>
+        </div>
+        <div class="mix robotics" id="sierra">
+            <img src="img/projects/icons/sierra.svg" class="icon"> 
+            <h5>FRC Team 1700</h5> 
+            <h6>a 120-pound, 6-foot stacking machine</h6>
+        </div>
+        <div class="mix" id="catalan">
+            <img src="img/projects/icons/catalan.svg"> 
+            <h5>Catalan Numbers</h5> 
+            <h6>a curious set of numbers explored with graphics</h6>
+        </div>
+        <div class="mix" id="more"><h5>and more!</h5></div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<!-- SCRIPTS -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- MIT IT UP LIBRARY -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+<script src="js/index.js"></script>
 </body>
     
 </html>
