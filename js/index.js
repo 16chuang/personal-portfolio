@@ -26,7 +26,7 @@ var main = function () {
 function addBackgroundOverlay(div, hide) {
     var id = div.attr('id');
     var bkgdStr = "url(img/projects/pics/"+id+".png)";
-    if (hide) { bkgdStr = "linear-gradient(rgba(50, 50, 50, 0.6), rgba(50, 50, 50, 0.7))," + bkgdStr; }
+    if (hide) { bkgdStr = "linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.8))," + bkgdStr; }
     div.css("background", bkgdStr);
 }
 
