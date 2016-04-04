@@ -214,26 +214,31 @@ section#projects {
       flex-grow: 0;
       background-repeat: no-repeat;
       margin: .5%;
+      position: relative;
+      overflow: hidden;
       width: 264px;
       height: 219px;
       transition: all 0.5s ease; }
-    /* line 241, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    /* line 243, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+    section#projects div#projects-container div.description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px; }
+    /* line 249, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#projects div#projects-container h5 {
       color: white;
       font-family: 'lato', helvetica, sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       margin: 4% 0;
-      font-size: 1.9em; }
-    /* line 249, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
+      font-size: 1.3em; }
+    /* line 257, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
     section#projects div#projects-container h6 {
       color: white;
       font-family: 'lato', helvetica, sans-serif;
       font-weight: 400;
       margin: 4% 10%;
       font-size: 1em; }
-    /* line 257, /Users/clairehuang/Sites/personal portfolio/site/scss/index.scss */
-    section#projects div#projects-container img {
-      height: 40px;
-      margin: 35px 0 2% 0; }
 
 /*# sourceMappingURL=index.css.map */
