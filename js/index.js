@@ -39,7 +39,6 @@ function setUpDiv(div) {
     div.css("background", bkgdStr);
     
     var description = div.children('.description');
-//    description.css("background-color", descriptionColorsDict[id]);
     description.css("background-color", "rgba("+descriptionColorsDict[id]+",.85)");
 }
 
