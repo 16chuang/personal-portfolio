@@ -1,0 +1,249 @@
+// =========== UNIVERSAL STYLING =========== //
+body, html {
+    height: 100%; 
+    // default font
+    font-family: 'Nunito', helvetica, sans-serif;
+    font-weight: 400; // regular
+}
+
+// fonts
+h1 {
+    font-family: 'Futura', helvetica, sans-serif;
+    font-weight: 600; // bold
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 2.5em; line-height: 1.4em;
+}
+
+h3 {
+    font-family: 'Futura', helvetica, sans-serif;
+    font-weight: 600; // bold
+    font-size: 2.7em;
+    margin-top: 0; margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: 300; // light
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none; color: black;
+    &:hover { text-decoration: none; color: black; }
+    &:visited { text-decoration: none; color: black; }
+    &:focus { text-decoration: none; color: black; }
+}
+
+a.button {
+    font-family: 'Futura', helvetica, sans-serif;
+    font-weight: 600; // bold
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    background: transparent;
+    border: lightgray 4px solid;
+    
+    padding: 5px 12px;
+    
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover { border-color: darkcyan; }
+}
+
+div.row {
+    height: 100vh; // fill full height of the browser window
+}
+
+.hide-me { opacity: 0; }
+.show-me { opacity: 1; }
+
+// =========== INTRO =========== //
+div#intro-row {
+    // set background color
+}
+
+div#intro-text, div#contact-row {
+    h1 { margin-bottom: .7em; }
+    h2 { margin-bottom: 1em; }
+    
+    p { // intro second paragraph
+        font-size: 1.6em; line-height: 1.5em;
+        margin-bottom: 3em;
+    }
+    
+    a.underline {
+        border-bottom: 3px solid lightgray;
+        display: inline-block;
+        position: relative;
+        
+        &::before {
+            position: absolute; top: 0px; left: 0;
+            overflow: hidden;
+            max-width: 0;
+            border-bottom: 3px solid darkcyan;
+            // need text so border can be the right width
+            content: attr(data-hover);
+            // grow newly colored underline
+            -webkit-transition: max-width 0.3s;
+            -moz-transition: max-width 0.3s;
+            transition: max-width 0.3s;
+            white-space: nowrap;
+        }
+        
+        &:hover::before { max-width: 100%; }
+    }
+    
+    a.button { font-size: 1.5em; }
+}
+
+// =========== INTRO: MODALS =========== //
+div.modal {
+    .modal-title { 
+        font-family: 'Nunito', helvetica, sans-serif;
+        font-size: 1.8em; font-weight: 700;
+    }
+    .modal-body p { font-size: 1.3em; }
+}
+
+#jump-modal {
+    @media screen and (min-width: 768px) {
+        .modal-dialog { width: 800px; }  
+    } 
+    img { margin-bottom: 20px; }
+}
+
+// =========== FLOATING PROJECT SHORTCUT MENU =========== //
+ul#projects-menu {
+    position: fixed;
+    top: 0; left: 0;
+    padding: 40px 8.333% 20px 0; margin-top: 0px;
+    background-color: white;
+    z-index: 70;
+    // evenly distribute li's
+    display: flex; justify-content: space-between; 
+    
+    li { 
+        list-style: none; 
+        display: inline-block;
+        text-align: center;
+    }
+    
+    a {
+        font-family: 'Futura', helvetica, sans-serif;
+        font-weight: 500; // medium?
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    li.active a { font-weight: 600; color: darkcyan; }
+    a:hover { color: darkcyan; }
+}
+
+// =========== PROJECT SLIDES =========== //
+div.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+// center image and content divs
+div.content { text-align: center; }
+div.content div { 
+    display: inline-block; 
+    vertical-align: middle; // align 2 divs vertically
+    float: none; 
+}
+
+div.img { margin-right: 15px; max-width: 30%; }
+img { width: 100%; }
+
+div.text {
+    width: 30%;
+    text-align: left;
+    margin-left: 15px;
+    
+    p { margin-bottom: 36px; }
+}
+
+div.buttons-block a.button { margin-right: 24px; }
+
+// next and previous buttons
+div.fp-controlArrow {
+    border: none !important;
+    width: 46px !important; height: 46px;
+    background-size: contain; background-repeat: no-repeat;
+}
+div.fp-prev {
+    background-image: url(/img/prev.png);
+    left: 8.333% !important;
+}
+div.fp-next {
+    background-image: url(/img/next.png);
+    right: 8.333% !important;
+}
+
+// dot navigation: general
+div.fp-slidesNav {
+    margin-bottom: 40px;
+    
+    li { width: 25px; height: 25px; }
+    a { background-size: contain; background-repeat: no-repeat; }
+    span { display: none; } // hide default dots
+}
+
+// dot navigation: specific sections
+#robots-row div.fp-slidesNav {
+    a { background-image: url('/img/dots-v2/robot.png'); }
+    a.active { background-image: url('/img/dots-v2/robot-active.png'); }
+    a:hover { background-image: url('/img/dots-v2/robot-active.png'); }
+}
+
+#mobile-row div.fp-slidesNav {
+    a { background-image: url('/img/dots-v2/mobile.png'); }
+    a.active { background-image: url('/img/dots-v2/mobile-active.png'); }
+    a:hover { background-image: url('/img/dots-v2/mobile-active.png'); }
+}
+
+#web-row div.fp-slidesNav {
+    a { background-image: url('/img/dots-v2/web.png'); }
+    a.active { background-image: url('/img/dots-v2/web-active.png'); }
+    a:hover { background-image: url('/img/dots-v2/web-active.png'); }
+}
+
+#design-row div.fp-slidesNav {
+    a { background-image: url('/img/dots-v2/design.png'); }
+    a.active { background-image: url('/img/dots-v2/design-active.png'); }
+    a:hover { background-image: url('/img/dots-v2/design-active.png'); }
+}
+
+#misc-row div.fp-slidesNav {
+    a { background-image: url('/img/dots-v2/misc.png'); }
+    a.active { background-image: url('/img/dots-v2/misc-active.png'); }
+    a:hover { background-image: url('/img/dots-v2/misc-active.png'); }
+}
+
+// =========== E40M SLIDE =========== //
+div.slide ol {
+    padding-left: 20px;
+    font-size: 1.4em; line-height: 1.5em;
+    margin-bottom: 0;
+    
+    li { margin-bottom: 5px; }
+}
+
+// =========== CONTACT ROW =========== //
+div#contact-row {
+    text-align: center;
+    h3 { margin-bottom: 30px; }
+    p { padding: 0 25%; margin-bottom: 50px; }
+    a.button { font-size: 1.3em; }
+}

@@ -1,0 +1,326 @@
+/* line 2, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+body, html {
+  height: 100%;
+  font-family: 'Nunito', helvetica, sans-serif;
+  font-weight: 400; }
+
+/* line 10, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+h1 {
+  font-family: 'Futura', helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 4.5em; }
+
+/* line 16, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+h2 {
+  font-size: 2.5em;
+  line-height: 1.4em; }
+
+/* line 20, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+h3 {
+  font-family: 'Futura', helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2.7em;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+/* line 27, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+h4 {
+  font-size: 1.7em;
+  font-style: italic;
+  font-weight: 300; }
+
+/* line 33, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+p {
+  font-size: 1.4em;
+  line-height: 1.5em; }
+
+/* line 38, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+a {
+  text-decoration: none;
+  color: black; }
+  /* line 40, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  a:hover {
+    text-decoration: none;
+    color: black; }
+  /* line 41, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  a:visited {
+    text-decoration: none;
+    color: black; }
+  /* line 42, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  a:focus {
+    text-decoration: none;
+    color: black; }
+
+/* line 45, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+a.button {
+  font-family: 'Futura', helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  border: lightgray 4px solid;
+  padding: 5px 12px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  /* line 60, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  a.button:hover {
+    border-color: darkcyan; }
+
+/* line 63, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.row {
+  height: 100vh; }
+
+/* line 67, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+.hide-me {
+  opacity: 0; }
+
+/* line 68, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+.show-me {
+  opacity: 1; }
+
+/* line 76, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#intro-text h1, div#contact-row h1 {
+  margin-bottom: .7em; }
+
+/* line 77, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#intro-text h2, div#contact-row h2 {
+  margin-bottom: 1em; }
+
+/* line 79, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#intro-text p, div#contact-row p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin-bottom: 3em; }
+
+/* line 84, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#intro-text a.underline, div#contact-row a.underline {
+  border-bottom: 3px solid lightgray;
+  display: inline-block;
+  position: relative; }
+  /* line 89, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div#intro-text a.underline::before, div#contact-row a.underline::before {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    border-bottom: 3px solid darkcyan;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.3s;
+    -moz-transition: max-width 0.3s;
+    transition: max-width 0.3s;
+    white-space: nowrap; }
+  /* line 103, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div#intro-text a.underline:hover::before, div#contact-row a.underline:hover::before {
+    max-width: 100%; }
+
+/* line 106, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#intro-text a.button, div#contact-row a.button {
+  font-size: 1.5em; }
+
+/* line 111, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.modal .modal-title {
+  font-family: 'Nunito', helvetica, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700; }
+
+/* line 115, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.modal .modal-body p {
+  font-size: 1.3em; }
+
+@media screen and (min-width: 768px) {
+  /* line 120, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  #jump-modal .modal-dialog {
+    width: 800px; } }
+
+/* line 122, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#jump-modal img {
+  margin-bottom: 20px; }
+
+/* line 126, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+ul#projects-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 8.333% 20px 0;
+  margin-top: 0px;
+  background-color: white;
+  z-index: 70;
+  display: flex;
+  justify-content: space-between; }
+  /* line 135, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  ul#projects-menu li {
+    list-style: none;
+    display: inline-block;
+    text-align: center; }
+  /* line 141, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  ul#projects-menu a {
+    font-family: 'Futura', helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase; }
+  /* line 148, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  ul#projects-menu li.active a {
+    font-weight: 600;
+    color: darkcyan; }
+  /* line 149, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  ul#projects-menu a:hover {
+    color: darkcyan; }
+
+/* line 153, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.title {
+  text-align: center;
+  margin-bottom: 50px; }
+
+/* line 159, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.content {
+  text-align: center; }
+
+/* line 160, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.content div {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+/* line 166, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.img {
+  margin-right: 15px;
+  max-width: 30%; }
+
+/* line 167, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+img {
+  width: 100%; }
+
+/* line 169, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.text {
+  width: 30%;
+  text-align: left;
+  margin-left: 15px; }
+  /* line 174, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div.text p {
+    margin-bottom: 36px; }
+
+/* line 177, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.buttons-block a.button {
+  margin-right: 24px; }
+
+/* line 180, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.fp-controlArrow {
+  border: none !important;
+  width: 46px !important;
+  height: 46px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* line 185, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.fp-prev {
+  background-image: url(/img/prev.png);
+  left: 8.333% !important; }
+
+/* line 189, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.fp-next {
+  background-image: url(/img/next.png);
+  right: 8.333% !important; }
+
+/* line 195, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.fp-slidesNav {
+  margin-bottom: 40px; }
+  /* line 198, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div.fp-slidesNav li {
+    width: 25px;
+    height: 25px; }
+  /* line 199, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div.fp-slidesNav a {
+    background-size: contain;
+    background-repeat: no-repeat; }
+  /* line 200, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div.fp-slidesNav span {
+    display: none; }
+
+/* line 205, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#robots-row div.fp-slidesNav a {
+  background-image: url("/img/dots-v2/robot.png"); }
+
+/* line 206, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#robots-row div.fp-slidesNav a.active {
+  background-image: url("/img/dots-v2/robot-active.png"); }
+
+/* line 207, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#robots-row div.fp-slidesNav a:hover {
+  background-image: url("/img/dots-v2/robot-active.png"); }
+
+/* line 211, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#mobile-row div.fp-slidesNav a {
+  background-image: url("/img/dots-v2/mobile.png"); }
+
+/* line 212, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#mobile-row div.fp-slidesNav a.active {
+  background-image: url("/img/dots-v2/mobile-active.png"); }
+
+/* line 213, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#mobile-row div.fp-slidesNav a:hover {
+  background-image: url("/img/dots-v2/mobile-active.png"); }
+
+/* line 217, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#web-row div.fp-slidesNav a {
+  background-image: url("/img/dots-v2/web.png"); }
+
+/* line 218, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#web-row div.fp-slidesNav a.active {
+  background-image: url("/img/dots-v2/web-active.png"); }
+
+/* line 219, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#web-row div.fp-slidesNav a:hover {
+  background-image: url("/img/dots-v2/web-active.png"); }
+
+/* line 223, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#design-row div.fp-slidesNav a {
+  background-image: url("/img/dots-v2/design.png"); }
+
+/* line 224, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#design-row div.fp-slidesNav a.active {
+  background-image: url("/img/dots-v2/design-active.png"); }
+
+/* line 225, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#design-row div.fp-slidesNav a:hover {
+  background-image: url("/img/dots-v2/design-active.png"); }
+
+/* line 229, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#misc-row div.fp-slidesNav a {
+  background-image: url("/img/dots-v2/misc.png"); }
+
+/* line 230, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#misc-row div.fp-slidesNav a.active {
+  background-image: url("/img/dots-v2/misc-active.png"); }
+
+/* line 231, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+#misc-row div.fp-slidesNav a:hover {
+  background-image: url("/img/dots-v2/misc-active.png"); }
+
+/* line 235, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div.slide ol {
+  padding-left: 20px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin-bottom: 0; }
+  /* line 240, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div.slide ol li {
+    margin-bottom: 5px; }
+
+/* line 244, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+div#contact-row {
+  text-align: center; }
+  /* line 246, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div#contact-row h3 {
+    margin-bottom: 30px; }
+  /* line 247, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div#contact-row p {
+    padding: 0 25%;
+    margin-bottom: 50px; }
+  /* line 248, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
+  div#contact-row a.button {
+    font-size: 1.3em; }
+
+/*# sourceMappingURL=v2.css.map */
