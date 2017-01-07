@@ -1,14 +1,21 @@
+// =========== SASS VARIABLES =========== //
+$body-font: 'Nunito', helvetica, sans-serif;
+$headline-font: 'Montserrat', helvetica, sans-serif;
+
+$bright-green: #0BDFBB; $muted-green: #2ABCA4;
+$bright-blue: #00DDE7; $muted-blue: #1DD2DA;
+
 // =========== UNIVERSAL STYLING =========== //
 body, html {
     height: 100%; 
     // default font
-    font-family: 'Nunito', helvetica, sans-serif;
+    font-family: $body-font;
     font-weight: 400; // regular
 }
 
 // fonts
 h1 {
-    font-family: 'Montserrat', helvetica, sans-serif;
+    font-family: $headline-font;
     font-weight: 700; // bold
     font-size: 4.8em;
 }
@@ -18,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Montserrat', helvetica, sans-serif;
+    font-family: $headline-font;
     font-weight: 600; // bold
     font-size: 2.9em;
     margin-top: 0; margin-bottom: 15px;
@@ -43,7 +50,7 @@ a {
 }
 
 a.button {
-    font-family: 'Montserrat', helvetica, sans-serif;
+    font-family: $headline-font;
     font-weight: 700; // bold
     font-size: 1.1em;
     text-align: center;
@@ -57,7 +64,10 @@ a.button {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    &:hover { border-color: darkcyan; }
+    
+    &:hover {
+        border-color: $muted-blue;
+    }
 }
 
 div.row {
@@ -68,9 +78,6 @@ div.row {
 .show-me { opacity: 1; }
 
 // =========== INTRO =========== //
-div#intro-row {
-    // set background color
-}
 
 div#intro-text, div#contact-row {
     h1 { margin-bottom: .7em; }
@@ -90,7 +97,7 @@ div#intro-text, div#contact-row {
             position: absolute; top: 0px; left: 0;
             overflow: hidden;
             max-width: 0;
-            border-bottom: 3px solid darkcyan;
+            border-bottom: 3px solid $muted-green;
             // need text so border can be the right width
             content: attr(data-hover);
             // grow newly colored underline
@@ -109,7 +116,7 @@ div#intro-text, div#contact-row {
 // =========== INTRO: MODALS =========== //
 div.modal {
     .modal-title { 
-        font-family: 'Nunito', helvetica, sans-serif;
+        font-family: $body-font;
         font-size: 1.8em; font-weight: 700;
     }
     .modal-body p { font-size: 1.3em; }
@@ -139,14 +146,14 @@ ul#projects-menu {
     }
     
     a {
-        font-family: 'Montserrat', helvetica, sans-serif;
+        font-family: $headline-font;
         font-weight: 400; // regular
         font-size: 16px;
         text-transform: uppercase;
     }
     
-    li.active a { font-weight: 700; color: darkcyan; }
-    a:hover { color: darkcyan; }
+    li.active a { font-weight: 700; color: $muted-green; }
+    a:hover { color: $muted-green; }
 }
 
 // =========== PROJECT SLIDES =========== //
