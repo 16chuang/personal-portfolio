@@ -6,9 +6,9 @@ body, html {
 
 /* line 10, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
 h1 {
-  font-family: 'Futura', helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 4.5em; }
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 4.8em; }
 
 /* line 16, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
 h2 {
@@ -17,9 +17,9 @@ h2 {
 
 /* line 20, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
 h3 {
-  font-family: 'Futura', helvetica, sans-serif;
+  font-family: 'Montserrat', helvetica, sans-serif;
   font-weight: 600;
-  font-size: 2.7em;
+  font-size: 2.9em;
   margin-top: 0;
   margin-bottom: 15px; }
 
@@ -53,9 +53,9 @@ a {
 
 /* line 45, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
 a.button {
-  font-family: 'Futura', helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 1em;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
   background: transparent;
@@ -157,13 +157,13 @@ ul#projects-menu {
     text-align: center; }
   /* line 141, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
   ul#projects-menu a {
-    font-family: 'Futura', helvetica, sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat', helvetica, sans-serif;
+    font-weight: 400;
     font-size: 16px;
     text-transform: uppercase; }
   /* line 148, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
   ul#projects-menu li.active a {
-    font-weight: 600;
+    font-weight: 700;
     color: darkcyan; }
   /* line 149, /Users/clairehuang/Sites/personal-portfolio/scss/v2.scss */
   ul#projects-menu a:hover {

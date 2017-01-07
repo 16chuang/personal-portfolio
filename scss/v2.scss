@@ -8,9 +8,9 @@ body, html {
 
 // fonts
 h1 {
-    font-family: 'Futura', helvetica, sans-serif;
-    font-weight: 600; // bold
-    font-size: 4.5em;
+    font-family: 'Montserrat', helvetica, sans-serif;
+    font-weight: 700; // bold
+    font-size: 4.8em;
 }
 
 h2 {
@@ -18,9 +18,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'Futura', helvetica, sans-serif;
+    font-family: 'Montserrat', helvetica, sans-serif;
     font-weight: 600; // bold
-    font-size: 2.7em;
+    font-size: 2.9em;
     margin-top: 0; margin-bottom: 15px;
 }
 
@@ -43,9 +43,9 @@ a {
 }
 
 a.button {
-    font-family: 'Futura', helvetica, sans-serif;
-    font-weight: 600; // bold
-    font-size: 1em;
+    font-family: 'Montserrat', helvetica, sans-serif;
+    font-weight: 700; // bold
+    font-size: 1.1em;
     text-align: center;
     text-transform: uppercase;
     
@@ -139,13 +139,13 @@ ul#projects-menu {
     }
     
     a {
-        font-family: 'Futura', helvetica, sans-serif;
-        font-weight: 500; // medium?
+        font-family: 'Montserrat', helvetica, sans-serif;
+        font-weight: 400; // regular
         font-size: 16px;
         text-transform: uppercase;
     }
     
-    li.active a { font-weight: 600; color: darkcyan; }
+    li.active a { font-weight: 700; color: darkcyan; }
     a:hover { color: darkcyan; }
 }
 
