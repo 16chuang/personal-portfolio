@@ -5,6 +5,13 @@ $headline-font: 'Montserrat', helvetica, sans-serif;
 $bright-green: #0BDFBB; $muted-green: #2ABCA4;
 $bright-blue: #00DDE7; $muted-blue: #1DD2DA;
 
+// =========== RESPONSIVE BREAKPOINTS =========== //
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
 // =========== UNIVERSAL STYLING =========== //
 body, html {
     height: 100%; 
