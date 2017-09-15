@@ -24,8 +24,8 @@
 <div class="container-fluid">
 <ul class="menu col-sm-offset-1 col-sm-11 hide-me" id="projects-menu">
     <li data-menuanchor="robots"><a href="#robots" class="active">robots</a></li>
-    <li data-menuanchor="mobile"><a href="#mobile">mobile apps</a></li>
     <li data-menuanchor="web"><a href="#web">websites</a></li>
+    <li data-menuanchor="mobile"><a href="#mobile">mobile apps</a></li>
     <li data-menuanchor="design"><a href="#design">design &amp; animation</a></li>
     <li data-menuanchor="misc"><a href="#misc">miscellany</a></li>
     <li data-menuanchor="contact"><a href="#contact">contact me</a></li>
@@ -34,7 +34,7 @@
     <div class="row section" id="intro-row">
         <div class="col-sm-8 col-sm-offset-2" id="intro-text">
             <h1>Hi there! I'm Claire.</h1>
-            <h2>I’m a freshman at Stanford who’s excited about <strong style="color: #2ABCA4;">robotics</strong> and <strong style="color: #1DD2DA;">computer science</strong>.</h2>
+            <h2>I’m a sophomore at Stanford who’s excited about <strong style="color: #2ABCA4;">robotics</strong> and <strong style="color: #1DD2DA;">computer science</strong>.</h2>
             <p>When I’m not doing <a class="underline" data-hover="homework" data-toggle="modal" data-target="#classes-modal">homework</a> or <a class="underline" data-hover="club activities" data-toggle="modal" data-target="#clubs-modal">club activities</a>, I enjoy poking around in machine shops, wrangling with the bezier tool, and <a class="underline" data-hover="jumping" data-toggle="modal" data-target="#jump-modal">jumping</a>.</p>
             <div style="text-align: center;">
                 <a href="#robots" class="button">see my projects</a>
@@ -55,7 +55,64 @@
                     <p>I built, wired, and programmed this mini segway as a personal foray into Arduino and control theory. <br> <br> It uses an Arduino Due for the brains, a six degrees of freedom IMU for sensing tilt, and nested PID controllers for keeping it upright.</p>
                     <div class="buttons-block">
                         <a target="_blank" href="https://vimeo.com/149802349" class="button">video</a>
-                        <a href="#" class="button">gimme the details!</a>
+                        <a href="http://bluestampengineering.com/student-projects/claire-h/" class="button">gimme the details!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>Slack-Connected Party Parrot</h3>
+                <h4>send the emoji over Slack, and the real parrot moves too</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/parrot.png">
+                </div>
+                <div class="text">
+                    <p>After the party parrot gif emoji became a fun addition to my workplace's Slack team, I wanted to create a real-life version. <br><br>
+                    The parrot is powered by a gear motor, RGB LED, Arduino, and Particle Photon. A custom Slack app monitors all messages and reactions for the parrot. Once detected, it notifies the Photon and fires up the parrot's colorful, circular dance.</p>
+                    <div class="buttons-block">
+                        <a target="_blank" href="https://vimeo.com/232408077" class="button">video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>Autonomous RC Car</h3>
+                <h4>hacking a $15 RC car for some city cruising</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/rc-car.png">
+                </div>
+                <div class="text">
+                    <p>
+                        <i>(work in progress)</i> I am working on making this RC car able to autonomously navigate a mini "city street." <br><br>
+                        The car is able to recognize stop signs in real time using a smartphone camera, OpenCV, histogram of gradients, and an SVM. It is also controllable via computer (through the hacked remote). <br><br>
+                        As a next step, I would like to incorporate a convolutional neural network to train the car to drive within lanes. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>"Clappy Bird" and Pacman</h3>
+                <h4>retro games on bare metal Raspberry Pi</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/pacman.png">
+                </div>
+                <div class="text">
+                    <p>For our computer systems class (CS 107E), two classmates and I built two retro games on bare metal Raspberry Pi. <br><br>
+                        <b>"Clappy Bird":</b> a variant of Flappy Bird, powered by an original graphics library and audio-based controls (clapping makes the bird move). <br><br>
+                        <b>Pacman:</b> the classic, with original graphics, ghost AIs, and arcade button controls. 
+                    </p>
+                    <div class="buttons-block">
+                        <a target="_blank" href="https://photos.google.com/share/AF1QipOZN8UepNJBsOQnc1CF3RmjtocRzoOIqBnQ-PEVc27j9_DMB8KGPCLexSWCZe1Epg?key=Uzl0TjRTUWppNUFwaGNyQ2dveWxjekRBUFVMNG9B" class="button">videos</a>
+                        <a href="https://github.com/cs107e/16chuang-mratan1-swkonz-project" class="button">code</a>
                     </div>
                 </div>
             </div>
@@ -78,66 +135,49 @@
                 </div>
             </div>
         </div>
-        <div class="slide">
-            <div class="title">
-                <h3>ENGR 40M Projects</h3>
-                <h4>an assortment of projects built for an EE class</h4>
-            </div>
-            <div class="content">
-                <div class="img">
-                    <img src="img/projects/thumbs-v2/tbd.png">
-                </div>
-                <div class="text">
-                    <ol>
-                        <li><strong>solar USB charger:</strong> diodes and boost converters</li>
-                        <li><strong>useless box:</strong> Arduino, servos, and switches</li>
-                        <li><strong>LED cube:</strong> transistors, multiplexing, and lots of soldering!</li>
-                        <li><strong>EKG circuit:</strong> opamp filters and oscilloscopes</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <div></div>
     </div>
-    <div class="row section" id="mobile-row">
-        <div class="slide">
-            <div class="title">
-                <h3>Mezzo</h3>
-                <h4>reducing food waste, one donation at a time</h4>
-            </div>
-            <div class="content">
-                <div class="img">
-                    <img src="img/projects/thumbs-v2/mezzo2.png">
-                </div>
-                <div class="text">
-                    <p>After seeing uneaten sandwiches discarded during a class trip, two classmates and I were inspired to research the food donation process.<br><br>Two years and three rejections from the App Store later, we created Mezzo, an iOS app that connects vendors with surplus food to local food banks. </p>
-                    <div class="buttons-block">
-                        <a target="_blank" href="https://vimeo.com/149734129" class="button">demo video</a>
-                        <a href="#" class="button">design process</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="title">
-                <h3>Trext</h3>
-                <h4>never send another "arrived safely" text again</h4>
-            </div>
-            <div class="content">
-                <div class="img">
-                    <img src="img/projects/thumbs-v2/trext.png">
-                </div>
-                <div class="text">
-                    <p>As teens with new driver licenses and budding independence, my classmates and I often got flooded with missed calls and texts from our parents asking if we’d arrived safely at our destinations. Five of us built Trext, an automatic check-in app, to assuage our parents’ concerns.<br><br>I worked on the app’s user flow and UI design. </p>
-                    <div class="buttons-block">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=1ZAXjGYXcTc" class="button">pitch video</a>
-                        <a href="#" class="button">design process</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="row section" id="web-row">
+        <div class="slide">
+            <div class="title">
+                <h3>TalkingPoints Crowdsourcing</h3>
+                <h4>web and mobile app for education tech startup</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/crowdsourcing.png">
+                </div>
+                <div class="text">
+                    <p>TalkingPoints is an app and platform that allows teachers to reach non-English-speaking families.<br><br> 
+                        Over the summer of 2017, I worked with them to build a translation crowdsourcing app, which gives teachers access to high quality, human-powered, and education-specific translations for free. <br><br>
+                        I built the app using Meteor JS, React, and Cordova.
+                    </p>
+                    <div class="buttons-block">
+                        <a href="https://crowdsourcing.talkingpts.org" class="button">live site</a>
+                        <a href="#" class="button">features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>Cardinal Ballet Company</h3>
+                <h4>website redesign for Stanford dance group</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/cbc.png">
+                </div>
+                <div class="text">
+                    <p><i>(work in progress)</i> I am working on mockups in Sketch and building a refreshed, one-page site for Stanford's Cardinal Ballet Company. I hope to create a bold and professional look centered around quality photographs and movement in the page. </p>
+<!--
+                    <div class="buttons-block">
+                        <a href="http://cardinalballet.stanford.edu/" class="button">live site</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
         <div class="slide">
             <div class="title">
                 <h3>Be a Good Doctor</h3>
@@ -186,22 +226,72 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div class="row section" id="mobile-row">
         <div class="slide">
             <div class="title">
-                <h3>Huang Lab</h3>
-                <h4>lab website redesign concept</h4>
+                <h3>Mezzo</h3>
+                <h4>reducing food waste, one donation at a time</h4>
             </div>
             <div class="content">
                 <div class="img">
-                    <img src="img/projects/thumbs-v2/lab.png">
+                    <img src="img/projects/thumbs-v2/mezzo2.png">
                 </div>
                 <div class="text">
-                    <p style="margin-bottom: 0 !important;">I proposed this redesign for a UCSF neuropathology lab to modernize their website and more clearly showcase their research. I converted the site to an entirely flat design, with bold, geometric blocks of text and image to create movement and small doses of classic serif font to bring sophistication.<br><br>Click the image to enlarge and view a before-and-after comparison.</p>
+                    <p>After seeing uneaten sandwiches discarded during a class trip, two classmates and I were inspired to research the food donation process.<br><br>Two years and three rejections from the App Store later, we created Mezzo, an iOS app that connects vendors with surplus food to local food banks. </p>
+                    <div class="buttons-block">
+                        <a target="_blank" href="https://vimeo.com/149734129" class="button">demo video</a>
+                        <a href="#" class="button">design process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>Trext</h3>
+                <h4>never send another "arrived safely" text again</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/trext.png">
+                </div>
+                <div class="text">
+                    <p>As teens with new driver licenses and budding independence, my classmates and I often got flooded with missed calls and texts from our parents asking if we’d arrived safely at our destinations. Five of us built Trext, an automatic check-in app, to assuage our parents’ concerns.<br><br>I worked on the app’s user flow and UI design. </p>
+                    <div class="buttons-block">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=1ZAXjGYXcTc" class="button">pitch video</a>
+                        <a href="#" class="button">design process</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="row section" id="design-row">
+        <div class="slide">
+            <div class="title">
+                <h3>TalkingPoints</h3>
+                <h4>print and digital designs for education tech startup</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/talkingpts.png">
+                </div>
+                <div class="text">
+                    <p>
+                        I designed a variety of promotional materials to explain TalkingPoints to teachers around the country.
+                    </p>
+                    <ul>
+                        <li>Product one-page flyers, stickers</li>
+                        <li>Professional development kit</li>
+                        <li>"How it works" animation for landing page</li>
+                        <li>Press content and infographics</li>
+                        <li>In-app congratulatory messages</li>
+                        <li>Weekly summary email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="slide">
             <div class="title">
                 <h3>Botrama</h3>
@@ -212,7 +302,7 @@
                     <img src="img/projects/thumbs-v2/botrama.png">
                 </div>
                 <div class="text">
-                    <p style="margin-bottom: 0 !important;">I created this video to show how a shopper might use Botrama's personalized virtual mannequin to try sizing and combine outfits on Neiman Marcus' website. My goal was to make the video look like realistic web browsing. I used Sketch for  graphics, Keynote for animations, and Final Cut Pro to stitch everything together.<br><br>The company is in stealth mode, so I cannot publicly post the video. Please <a href="mailto:16chuang@gmail.com?Subject=Botrama video" id="email">send me an email</a> if you'd like more information.</p>
+                    <p style="margin-bottom: 0 !important;">I created this video to simulate how a shopper might use Botrama's personalized virtual mannequin to try sizing and combine outfits on Neiman Marcus' website. I used Sketch for  graphics, Keynote for animations, and Final Cut Pro to stitch everything together.<br><br>The company is in stealth mode, so I cannot publicly post the video. <a href="mailto:16chuang@gmail.com?Subject=Botrama video" id="email">Send me an email</a> if you'd like more information.</p>
                 </div>
             </div>
         </div>
@@ -248,6 +338,25 @@
                     <ol>
                         <li><strong>phone mount:</strong> After many failed attempts to use Google Maps one-handed while biking, I CAD-ed, laser cut, and glued together this acrylic phone holder for my handlebars. There's even a convenient hole for a charging cable should I add a dynamo.</li>
                         <li><strong>EL wire:</strong> I would like to add electroluminescent wire to the rims of my bike to improve side visibility. My biggest challenge will be weatherproofing the inverter.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">
+                <h3>ENGR 40M Projects</h3>
+                <h4>an assortment of projects built for an EE class</h4>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <img src="img/projects/thumbs-v2/tbd.png">
+                </div>
+                <div class="text">
+                    <ol>
+                        <li><strong>solar USB charger:</strong> diodes and boost converters</li>
+                        <li><strong>useless box:</strong> Arduino, servos, and switches</li>
+                        <li><strong>LED cube:</strong> transistors, multiplexing, and lots of soldering!</li>
+                        <li><strong>EKG circuit:</strong> opamp filters and oscilloscopes</li>
                     </ol>
                 </div>
             </div>
@@ -294,7 +403,7 @@
     </div>
     <div class="row section" id="contact-row">
         <h3>Thanks for visiting!</h3>
-        <p>Want to learn more? Check out my code on <a target="_blank" class="underline" href="https://github.com/16chuang" data-hover="Github">Github</a>, download my <a target="_blank" class="underline" href="/resume.pdf" data-hover="resume">resume</a>, hop over to <a target="_blank" class="underline" href="https://www.linkedin.com/in/16chuang" data-hover="LinkedIn">LinkedIn</a>, or send me an <a class="underline" href="mailto:16chuang@gmail.com?Subject=Hello!" id="email" data-hover="email">email</a>.</p>
+        <p>Want to learn more? Check out my code on <a target="_blank" class="underline" href="https://github.com/16chuang" data-hover="Github">Github</a>, download my <a target="_blank" class="underline" href="resume.pdf" data-hover="resume">resume</a>, hop over to <a target="_blank" class="underline" href="https://www.linkedin.com/in/16chuang" data-hover="LinkedIn">LinkedIn</a>, or send me an <a class="underline" href="mailto:16chuang@gmail.com?Subject=Hello!" id="email" data-hover="email">email</a>.</p>
         <div style="text-align: center;">
             <a href="#intro" class="button">back to the top!</a>
         </div>
@@ -311,7 +420,20 @@
                 <h3 class="modal-title">Relevant Coursework</h3>
             </div>
             <div class="modal-body">
-                <p>Vector Calculus for Engineers (CME 100)<br>An Introduction to Making: What is EE (ENGR 40M)</p>
+                <p>
+                    Computer Systems from the Ground Up (CS 107E)<br>
+                    Mathematical Foundations of Computing (CS 103)<br>
+                    Standard C++ Programming (CS 106L)<br>
+                    Programming Abstractions (CS 106B)<br>
+                    CS + Social Good (CS 106S)<br>
+                    <br>
+                    Vector Calculus for Engineers (CME 100)<br>
+                    Ordinary Differential Equations for Engineers (CME 102)<br>
+                    An Introduction to Making: What is EE (ENGR 40M)<br>
+                    Mechanics (PHYSICS 41)<br>
+                    <br>
+                    Physics in the 21st Century (PHYSICS 83N)
+                </p>
             </div>
         </div>
     </div>
@@ -324,7 +446,12 @@
                 <h3 class="modal-title">Clubs!</h3>
             </div>
             <div class="modal-body">
-                <p>Student Space Initiative, balloons code and HABMC team member<br>Stanford Solar Car Project team member<br>Cardinal Ballet Company dancer</p>
+                <p>
+                    CS 106A Section Leader (TA)<br>
+                    Student Space Initiative, balloons code and HABMC team member<br>
+                    Girls Teaching Girls To Code, Code Camp mentor<br>
+                    Cardinal Ballet Company, dancer and media coordinator
+                </p>
             </div>
         </div>
     </div>

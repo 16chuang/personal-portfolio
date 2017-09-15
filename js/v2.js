@@ -1,7 +1,7 @@
 // page initialization
 $(function () {
     $('#fullpage').fullpage({
-        anchors: ['intro', 'robots', 'mobile', 'web', 'design', 'misc', 'contact'],
+        anchors: ['intro', 'robots', 'web', 'mobile', 'design', 'misc', 'contact'],
         menu: '#projects-menu',
         slidesNavigation: true,
         loopHorizontal: false,
