@@ -1,0 +1,11 @@
+h1.title {
+	font-family: 'Montserrat', helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+}
+
+div.post {
+	font-family: 'Nunito', helvetica, sans-serif;
+	font-size: 1.4em;
+    line-height: 1.5em;
+}
